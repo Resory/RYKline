@@ -14,6 +14,8 @@
 		FF4D992D1A0C6DBC001A6257 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4D992C1A0C6DBC001A6257 /* Images.xcassets */; };
 		FF4D99301A0C6DBC001A6257 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF4D992E1A0C6DBC001A6257 /* LaunchScreen.xib */; };
 		FF4D993C1A0C6DBC001A6257 /* RYKlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4D993B1A0C6DBC001A6257 /* RYKlineTests.m */; };
+		FF4D99511A0C6F31001A6257 /* cRKlineScrView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4D994E1A0C6F31001A6257 /* cRKlineScrView.m */; };
+		FF4D99521A0C6F31001A6257 /* cRShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4D99501A0C6F31001A6257 /* cRShapeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		FF4D99351A0C6DBC001A6257 /* RYKlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RYKlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4D993A1A0C6DBC001A6257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF4D993B1A0C6DBC001A6257 /* RYKlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYKlineTests.m; sourceTree = "<group>"; };
+		FF4D994D1A0C6F31001A6257 /* cRKlineScrView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cRKlineScrView.h; sourceTree = "<group>"; };
+		FF4D994E1A0C6F31001A6257 /* cRKlineScrView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cRKlineScrView.m; sourceTree = "<group>"; };
+		FF4D994F1A0C6F31001A6257 /* cRShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cRShapeView.h; sourceTree = "<group>"; };
+		FF4D99501A0C6F31001A6257 /* cRShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cRShapeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		FF4D991E1A0C6DBC001A6257 /* RYKline */ = {
 			isa = PBXGroup;
 			children = (
+				FF4D994C1A0C6F31001A6257 /* Verdor */,
 				FF4D99231A0C6DBC001A6257 /* AppDelegate.h */,
 				FF4D99241A0C6DBC001A6257 /* AppDelegate.m */,
 				FF4D99261A0C6DBC001A6257 /* ViewController.h */,
@@ -117,6 +124,17 @@
 				FF4D993A1A0C6DBC001A6257 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF4D994C1A0C6F31001A6257 /* Verdor */ = {
+			isa = PBXGroup;
+			children = (
+				FF4D994D1A0C6F31001A6257 /* cRKlineScrView.h */,
+				FF4D994E1A0C6F31001A6257 /* cRKlineScrView.m */,
+				FF4D994F1A0C6F31001A6257 /* cRShapeView.h */,
+				FF4D99501A0C6F31001A6257 /* cRShapeView.m */,
+			);
+			path = Verdor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4D99521A0C6F31001A6257 /* cRShapeView.m in Sources */,
 				FF4D99281A0C6DBC001A6257 /* ViewController.m in Sources */,
 				FF4D99251A0C6DBC001A6257 /* AppDelegate.m in Sources */,
+				FF4D99511A0C6F31001A6257 /* cRKlineScrView.m in Sources */,
 				FF4D99221A0C6DBC001A6257 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +432,7 @@
 				FF4D99411A0C6DBC001A6257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF4D99421A0C6DBC001A6257 /* Build configuration list for PBXNativeTarget "RYKlineTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +441,7 @@
 				FF4D99441A0C6DBC001A6257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
