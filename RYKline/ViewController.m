@@ -119,11 +119,11 @@
         // K线图距离左边距离,左边留给价格显示
         _klineToLeftWidth = 0;
         // 加入数据
-        [_scaleArr addObject:[NSString stringWithFormat:@"%d",_minHeightPrice]];
-        [_scaleArr addObject:[NSString stringWithFormat:@"%d",_minHeightPrice + _klineHeightspace*1]];
-        [_scaleArr addObject:[NSString stringWithFormat:@"%d",_minHeightPrice + _klineHeightspace*2]];
-        [_scaleArr addObject:[NSString stringWithFormat:@"%d",_minHeightPrice + _klineHeightspace*3]];
-        [_scaleArr addObject:[NSString stringWithFormat:@"%d",_maxHeightPrice]];
+        [_scaleArr addObject:[NSString stringWithFormat:@"%ld",_minHeightPrice]];
+        [_scaleArr addObject:[NSString stringWithFormat:@"%ld",_minHeightPrice + _klineHeightspace*1]];
+        [_scaleArr addObject:[NSString stringWithFormat:@"%ld",_minHeightPrice + _klineHeightspace*2]];
+        [_scaleArr addObject:[NSString stringWithFormat:@"%ld",_minHeightPrice + _klineHeightspace*3]];
+        [_scaleArr addObject:[NSString stringWithFormat:@"%ld",_maxHeightPrice]];
         
         // 价格点 月份右滚递增加
         NSMutableArray *priceArr = [[NSMutableArray alloc] init];
@@ -164,7 +164,7 @@
     //K线图宽度
     _klineSrc.contentSize = CGSizeMake(MAX(_klineSrc.klineWidthSpace * (_pathPointArr.count + 2) + _klineToLeftWidth, _klineSrc.frame.size.width),_klineSrc.frame.size.height);
     
-    //K线点位置数组(nspoint)
+    //K线点位置数组(CGPoint)
     _klineSrc.kLineData = _pathPointArr;
     
     //点对应的日期
